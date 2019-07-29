@@ -48,6 +48,8 @@ C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\Proyec
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\roslyn\VBCSCompiler.exe
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\EntityFramework.SqlServer.dll
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\Newtonsoft.Json.dll
@@ -59,6 +61,8 @@ C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\Proyec
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\System.Web.WebPages.dll
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\System.Web.WebPages.Razor.dll
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\WebGrease.dll
+C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\EntityFramework.SqlServer.xml
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\System.Web.Helpers.xml
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\System.Web.Mvc.xml
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\System.Web.Optimization.xml
@@ -69,8 +73,8 @@ C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\Proyec
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\Newtonsoft.Json.xml
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\Antlr3.Runtime.pdb
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\obj\Debug\ProyectoTechnoloshe.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\obj\Debug\ProyectoTechnoloshe.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\obj\Debug\ProyectoTechnoloshe.csproj.CopyComplete
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\obj\Debug\ProyectoTechnoloshe.dll
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\obj\Debug\ProyectoTechnoloshe.pdb
+C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe\Solucion\ProyectoTechnoloshe\obj\Debug\ProyectoTechnoloshe.csprojAssemblyReference.cache

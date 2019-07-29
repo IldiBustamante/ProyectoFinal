@@ -22,7 +22,7 @@ namespace ProyectoTechnoloshe.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Página de contacto";
 
             return View();
         }

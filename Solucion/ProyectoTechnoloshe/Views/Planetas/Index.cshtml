@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ProyectoTechnoloshe.Models.Planeta>
+@* Aca conecte mi propia hoja de estilos para fondos principalmente. *@
+<link href="~/Content/EstilosIldara.css" rel="stylesheet" />
+<script src="~/Scripts/Busqueda.js"></script>
+@{
+    ViewBag.Title = "Listado de Planetas Visibles";
+}
+<input type="text" id="myInput" onkeyup="buscar()" placeholder="Ingresá tu búsqueda" class="form-control pull-right">
+<h3>Listado de Planetas Visibles</h3> 
+<br />
+
+<table class="table table-responsive table-hover " id="miTabla">
+    <tr>
+        <th title="Nombre del planeta">
+            Nombre
+        </th>
+        <th title="Tipo de planeta">
+            Tipo
+        </th>
+        <th title="Distancia en Unidades Astronómicas a la Tierra">
+            Distancia en UA
+        </th>
+        <th title="Magnitud visual del planeta en el cielo">
+            Magnitud Absoluta
+        </th>
+        <th title="¿Puede verse en Agosto en el Hemisferio Sur?">
+            Visibilidad HS
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DistanciaUA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MagnitudAbsoluta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VisibilidadHS)
+            </td>
+            <td>
+                @Html.ActionLink(" ", "Edit", new { id = item.ID }, new { @class = "glyphicon glyphicon-pencil" })
+            </td>
+        </tr>
+    }
+
+</table>

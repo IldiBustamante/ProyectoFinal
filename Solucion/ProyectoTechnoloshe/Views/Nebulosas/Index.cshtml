@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ProyectoTechnoloshe.Models.Nebulosa>
+@* Aca conecte mi propia hoja de estilos para fondos principalmente. *@
+<link href="~/Content/EstilosIldara.css" rel="stylesheet" />
+@* Aca conecte mi script para la busqueda (filtrado) *@
+<script src="~/Scripts/Busqueda.js"></script>
+@{
+    ViewBag.Title = "Listado de Nebulosas Visibles";
+}
+<input type="text" id="myInput" onkeyup="buscar()" placeholder="Ingresá tu búsqueda" class="form-control pull-right">
+<h3>Lista de Nebulosas Visibles</h3>
+
+<p title="Desde acá podes agregar nebulosas">
+    @Html.ActionLink("Agregar Nebulosa", "Create")
+</p>
+<table class="table-responsive table-hover table" id="miTabla">
+    <tr>
+        <th title="Nombre de la nebulosa">
+            Nombre
+        </th>
+        <th title="Tipo de nebulosa">
+            Tipo
+        </th>
+        <th title="Distancia en parsecs a la Tierra">
+            Distancia en parsecs
+        </th>
+        <th title="Magnitud visual de la nebulosa en el cielo">
+            Magnitud Absoluta
+        </th>
+        <th title="¿Puede verse en Agosto en el Hemisferio Sur?">
+            Visibilidad HS
+        </th>
+        <th title="Catálogo al que pertenece">
+            Catálogo
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DistanciaParsecs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MagnitudAbsoluta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VisibilidadHS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Catalogo.Catalogo1)
+            </td>
+            <td >
+                @Html.ActionLink("    ", "Edit", new { id = item.ID }, new { @class = "glyphicon glyphicon-pencil" }) |
+                @Html.ActionLink(" ", "Delete", new { id = item.ID }, new { @class = "glyphicon glyphicon-trash" })
+            </td>
+        </tr>
+    }
+
+</table>

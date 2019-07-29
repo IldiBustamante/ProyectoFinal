@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TechnolosheProyectoModelStoreContainer" CdmEntityContainer="TechnolosheProyectoEntities">
+    <EntitySetMapping Name="Catalogos">
+      <EntityTypeMapping TypeName="TechnolosheProyectoModel.Catalogo">
+        <MappingFragment StoreEntitySet="Catalogos">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Catalogo1" ColumnName="Catalogo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estrellas">
+      <EntityTypeMapping TypeName="TechnolosheProyectoModel.Estrella">
+        <MappingFragment StoreEntitySet="Estrellas">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDCatalogo" ColumnName="IDCatalogo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="DistanciaParsecs" ColumnName="DistanciaParsecs" />
+          <ScalarProperty Name="MagnitudAbsoluta" ColumnName="MagnitudAbsoluta" />
+          <ScalarProperty Name="VisibilidadHS" ColumnName="VisibilidadHS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nebulosas">
+      <EntityTypeMapping TypeName="TechnolosheProyectoModel.Nebulosa">
+        <MappingFragment StoreEntitySet="Nebulosas">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDCatalogo" ColumnName="IDCatalogo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="DistanciaParsecs" ColumnName="DistanciaParsecs" />
+          <ScalarProperty Name="MagnitudAbsoluta" ColumnName="MagnitudAbsoluta" />
+          <ScalarProperty Name="VisibilidadHS" ColumnName="VisibilidadHS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Planetas">
+      <EntityTypeMapping TypeName="TechnolosheProyectoModel.Planeta">
+        <MappingFragment StoreEntitySet="Planetas">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDCatalogo" ColumnName="IDCatalogo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="DistanciaUA" ColumnName="DistanciaUA" />
+          <ScalarProperty Name="MagnitudAbsoluta" ColumnName="MagnitudAbsoluta" />
+          <ScalarProperty Name="VisibilidadHS" ColumnName="VisibilidadHS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

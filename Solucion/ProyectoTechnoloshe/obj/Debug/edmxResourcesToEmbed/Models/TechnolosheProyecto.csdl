@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TechnolosheProyectoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Catalogo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Catalogo1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Estrellas" Relationship="Self.FK_Estrellas_Catalogos" FromRole="Catalogos" ToRole="Estrellas" />
+    <NavigationProperty Name="Nebulosas" Relationship="Self.FK_Nebulosas_Catalogos" FromRole="Catalogos" ToRole="Nebulosas" />
+    <NavigationProperty Name="Planetas" Relationship="Self.FK_Planetas_Catalogos" FromRole="Catalogos" ToRole="Planetas" />
+  </EntityType>
+  <EntityType Name="Estrella">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDCatalogo" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DistanciaParsecs" Type="Double" Nullable="false" />
+    <Property Name="MagnitudAbsoluta" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VisibilidadHS" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Catalogo" Relationship="Self.FK_Estrellas_Catalogos" FromRole="Estrellas" ToRole="Catalogos" />
+  </EntityType>
+  <EntityType Name="Nebulosa">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDCatalogo" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DistanciaParsecs" Type="Int32" Nullable="false" />
+    <Property Name="MagnitudAbsoluta" Type="Decimal" Precision="23" Scale="2" Nullable="false" />
+    <Property Name="VisibilidadHS" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Catalogo" Relationship="Self.FK_Nebulosas_Catalogos" FromRole="Nebulosas" ToRole="Catalogos" />
+  </EntityType>
+  <EntityType Name="Planeta">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDCatalogo" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DistanciaUA" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MagnitudAbsoluta" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VisibilidadHS" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Catalogo" Relationship="Self.FK_Planetas_Catalogos" FromRole="Planetas" ToRole="Catalogos" />
+  </EntityType>
+  <Association Name="FK_Estrellas_Catalogos">
+    <End Role="Catalogos" Type="Self.Catalogo" Multiplicity="1" />
+    <End Role="Estrellas" Type="Self.Estrella" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogos">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Estrellas">
+        <PropertyRef Name="IDCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nebulosas_Catalogos">
+    <End Role="Catalogos" Type="Self.Catalogo" Multiplicity="1" />
+    <End Role="Nebulosas" Type="Self.Nebulosa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogos">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Nebulosas">
+        <PropertyRef Name="IDCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Planetas_Catalogos">
+    <End Role="Catalogos" Type="Self.Catalogo" Multiplicity="1" />
+    <End Role="Planetas" Type="Self.Planeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogos">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Planetas">
+        <PropertyRef Name="IDCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TechnolosheProyectoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Catalogos" EntityType="Self.Catalogo" />
+    <EntitySet Name="Estrellas" EntityType="Self.Estrella" />
+    <EntitySet Name="Nebulosas" EntityType="Self.Nebulosa" />
+    <EntitySet Name="Planetas" EntityType="Self.Planeta" />
+    <AssociationSet Name="FK_Estrellas_Catalogos" Association="Self.FK_Estrellas_Catalogos">
+      <End Role="Catalogos" EntitySet="Catalogos" />
+      <End Role="Estrellas" EntitySet="Estrellas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nebulosas_Catalogos" Association="Self.FK_Nebulosas_Catalogos">
+      <End Role="Catalogos" EntitySet="Catalogos" />
+      <End Role="Nebulosas" EntitySet="Nebulosas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Planetas_Catalogos" Association="Self.FK_Planetas_Catalogos">
+      <End Role="Catalogos" EntitySet="Catalogos" />
+      <End Role="Planetas" EntitySet="Planetas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

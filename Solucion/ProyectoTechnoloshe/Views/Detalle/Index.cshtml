@@ -1,0 +1,43 @@
+﻿<link href="~/Content/EstilosIldara.css" rel="stylesheet" />
+@{ 
+    ViewBag.Title="Instrucciones y Detalles";
+}
+<div>
+    <h3>Definiciones y datos interesantes sobre el catálogo</h3> 
+        <p>Esta sección esta dirigida para los usuarios que por primera vez quieran sumergirse en el mundo de la astronomía de aficionado
+        tambien para aquellos que deseen saber si es visible o no un objeto celeste durante el mes de Agosto de 2019.
+        Con esto nos referiremos a planetas, nebulosas y estrellas por igual, a menos que se especifique de otra manera.</p>
+        <div>
+            <dl>
+            <dt>Nombre</dt>
+            <dd>Nos referimos al nombre "común" o "vulgar" de cada objeto celeste.</dd>
+            <dt>Tipo</dt>
+            <dd>El tipo de planeta define si es exterior o interior, de estrella según su tipo espectral y de nebulosa, la formación que tiene</dd>
+            <dt>Distancia en UA o Parsecs</dt>
+            <dd>Una Unidad Astronómica(UA) es la distancia Tierra-Sol, de aproximadamente 149.6 millones de km. Asi mismo,
+            63241.1 UA es un año luz, y un parsec es 3.26 años luz.</dd>
+            <dt>Magnitud Absoluta</dt>
+            <dd>La magnitud absoluta es que tan "brillante" vemos en el cielo cada uno de los objetos,que se mide en magnitudes.
+            Cuanto más negativo el número, más brillante se verá.</dd>
+            <dt>Visibilidad HS</dt>
+            <dd>Si aparece marcado con un tick, significa que lo que quieras ver será visible en Agosto de este año.</dd>
+            <dt>¿Planeta interior o exterior?</dt>
+            <dd>Definimos a los planetas interiores como los que se encuentran antes del cinturón de asteroides, los cuales son más 
+             rocosos. Los exteriores son aquellos después del cinturón, casi todos gaseosos,con anillos grandes
+             a su alrededor,a excepción de Plutón.</dd>
+            <dt>Clasificación de tipo espectral</dt>
+            <dd id="tipo"><img src="~/Content/tipoespectral.jpg" class="img-responsive" id="fototipo"/>Relaciona temperatura con tipo espectral.</dd>
+            <dt>¿A qué catálogo pertenece cada objeto?</dt>
+            <dd>En caso de ser un planeta, pertenecen al Sistema Solar y a ningún catálogo. Nebulosas y galaxias se agrupan en 
+            el catálogo NGC, que significa (<i>New General Catalogue</i>) o, Nuevo Catálogo General. Las estrellas se
+            agrupan en el catálogo Hipparco, con siglas HIP.</dd>
+        </dl>
+        </div>
+      <h3>Instrucciones de uso de este catálogo</h3>
+        <p>Este catálogo cuenta con 3 listas de objetos celestes, divididos en Planetas, Estrellas y Galaxias, de las cuales mayormente
+    se observan durante el mes de Agosto en el Hemisferio Sur. Podes agregar objetos que no esten en las listas mediante el botón Agregar,
+    ya sea @Html.ActionLink("Agregar Estrella","Create","Estrellas") para una estrella o @Html.ActionLink("Agregar Nebulosa","Create","Nebulosas")
+    para una nebulosa.</p>
+        <p>Tambien podes editar datos ya existentes, para cada objeto celeste presente en el catálogo, como asi tambien borrarlos o 
+        ver fotos en la galeria de imágenes @Html.ActionLink("Galería de imágenes","Index","Imagen").(Fotos no reales de telescopio aficionado.) </p>
+        </div>

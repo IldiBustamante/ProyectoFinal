@@ -1,0 +1,48 @@
+﻿/*Agrego esta hoja de estilos para linkearla con mi pagina de inicio*/
+
+body {
+    background-color: rgba(54, 51, 68, 0.20);
+    font-family: 'Cambria Math';
+}
+
+#fototipo {
+    padding-top:30px;
+    border-radius: 0px !important;
+    transform:scale(2.5);
+    padding-left:100px;
+    max-width:100%;
+    height:auto;
+}
+
+#myInput{
+    background-color:rgba(251, 251, 251, 0.78) !important;
+    margin-bottom:20px !important;
+    color:#4e4d4d !important;
+    border-color:dimgray !important;
+    margin-top:20px;
+}   
+#tipo{
+    margin-top:20px !important;
+}
+img {
+    max-width: 300px !important;
+    max-height: 300px !important;
+    padding: 15px;
+    border-radius:30% !important;
+}
+
+#botonEstrella {
+    color: black !important;
+    border: 2px solid #211953 !important;
+    opacity: 0.6;
+    transition: 0.3s
+}
+.jumbotron {
+    margin-top:10px;
+    background-image: url("delvelo.jpg") !important;
+    color: #f3f2ba;
+}
+#miTabla{
+    background-color:rgba(61, 38, 74, 0.33) !important;
+    border-radius:10px;
+}

@@ -1,0 +1,70 @@
+﻿@model ProyectoTechnoloshe.Models.Estrella
+<link href="~/Content/EstilosIldara.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Borrar Elemento";
+}
+
+<h2>Borrar</h2>
+
+<h3>¿Desea borrar este elemento de la lista?</h3>
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            Nombre
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            Tipo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            Distancia en Parsecs
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DistanciaParsecs)
+        </dd>
+
+        <dt>
+            Magnitud Absoluta
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MagnitudAbsoluta)
+        </dd>
+
+        <dt>
+            Visibilidad HS
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VisibilidadHS)
+        </dd>
+
+        <dt>
+            Catálogo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Catalogo.Catalogo1)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Volver a la lista", "Index")
+        </div>
+    }
+</div>
