@@ -11,17 +11,32 @@ namespace ProyectoTechnoloshe.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel;
+
     public partial class Estrella
     {
         public int ID { get; set; }
+
+        [DisplayName("Catálogo")]
         public int IDCatalogo { get; set; }
+
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar un nombre.")]
         public string Nombre { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar un tipo.")]
         public string Tipo { get; set; }
-        public double DistanciaParsecs { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar una distancia.")]
+        [DisplayName("Distancia en Parsecs")]
+        [Range(0, 5000000, ErrorMessage = "La distancia debe estar entre 0 y 5000000 parsecs.")]
+        public int DistanciaParsecs { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar una magnitud.")]
+        [DisplayName("Magnitud Absoluta")]
+        [Range(-50, 50, ErrorMessage = "La magnitud debe estar entre -50 y 50 mag.")]
         public decimal MagnitudAbsoluta { get; set; }
+        [DisplayName("Visibilidad en HS")]
         public bool VisibilidadHS { get; set; }
-    
+
         public virtual Catalogo Catalogo { get; set; }
     }
 }
+

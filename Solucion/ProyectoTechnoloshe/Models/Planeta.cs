@@ -11,17 +11,32 @@ namespace ProyectoTechnoloshe.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel;
     
     public partial class Planeta
     {
         public int ID { get; set; }
         public int IDCatalogo { get; set; }
+
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar un nombre.")]
         public string Nombre { get; set; }
+
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar un tipo.")]
         public string Tipo { get; set; }
+
+        [Required(AllowEmptyStrings = true)]
+        [DisplayName("Distancia en UA")]
         public Nullable<decimal> DistanciaUA { get; set; }
+
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar una magnitud.")]
+        [DisplayName("Magnitud Absoluta")]
+        [Range(-50, 50, ErrorMessage = "La magnitud debe estar entre -50 y 50 mag.")]
         public decimal MagnitudAbsoluta { get; set; }
+
+        [DisplayName("Visibilidad en HS")]
         public bool VisibilidadHS { get; set; }
-    
+
         public virtual Catalogo Catalogo { get; set; }
     }
 }
