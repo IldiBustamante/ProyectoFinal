@@ -32,7 +32,7 @@
           <Property Name="IDCatalogo" Type="int" Nullable="false" />
           <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Tipo" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="DistanciaParsecs" Type="int" Nullable="false" />
+          <Property Name="DistanciaParsecs" Type="float" Nullable="false" />
           <Property Name="MagnitudAbsoluta" Type="decimal" Precision="23" Scale="2" Nullable="false" />
           <Property Name="VisibilidadHS" Type="bit" Nullable="false" />
         </EntityType>

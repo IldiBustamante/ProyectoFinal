@@ -73,6 +73,7 @@ C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe Ildara\Solucion
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe Ildara\Solucion\ProyectoTechnoloshe\bin\Newtonsoft.Json.xml
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe Ildara\Solucion\ProyectoTechnoloshe\bin\Antlr3.Runtime.pdb
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe Ildara\Solucion\ProyectoTechnoloshe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe Ildara\Solucion\ProyectoTechnoloshe\obj\Debug\ProyectoTechnoloshe.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe Ildara\Solucion\ProyectoTechnoloshe\obj\Debug\ProyectoTechnoloshe.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe Ildara\Solucion\ProyectoTechnoloshe\obj\Debug\ProyectoTechnoloshe.csproj.CopyComplete
 C:\Users\Administrator\Desktop\Codigo Ildara\ProyectoTechnoloshe Ildara\Solucion\ProyectoTechnoloshe\obj\Debug\ProyectoTechnoloshe.dll
