@@ -28,7 +28,7 @@ namespace ProyectoTechnoloshe.Models
         [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar una distancia.")]
         [DisplayName("Distancia en Parsecs")]
         [Range(0, 5000000, ErrorMessage = "La distancia debe estar entre 0 y 5000000 parsecs.")]
-        public int DistanciaParsecs { get; set; }
+        public double DistanciaParsecs { get; set; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar una magnitud.")]
         [DisplayName("Magnitud Absoluta")]
         [Range(-50, 50, ErrorMessage = "La magnitud debe estar entre -50 y 50 mag.")]
