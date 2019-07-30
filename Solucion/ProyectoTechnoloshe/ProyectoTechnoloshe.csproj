@@ -139,6 +139,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Catalogo.cs">
       <DependentUpon>TechnolosheProyecto.tt</DependentUpon>
     </Compile>
@@ -224,6 +225,7 @@
     </EntityDeploy>
     <Content Include="Models\TechnolosheProyecto.edmx.diagram">
       <DependentUpon>TechnolosheProyecto.edmx</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

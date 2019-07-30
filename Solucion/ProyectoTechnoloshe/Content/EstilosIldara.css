@@ -6,7 +6,7 @@ body {
 }
 
 #fototipo {
-    padding-top:30px;
+    padding-top:20px !important;
     border-radius: 0px !important;
     transform:scale(2.5);
     padding-left:100px;
